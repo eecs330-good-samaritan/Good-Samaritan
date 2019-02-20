@@ -3,21 +3,40 @@
 <head>
   <title>Book Buddies</title>
   <link rel="stylesheet" type="text/css" href="opportunities.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div id="screen">
-  <!-- Header at top of screen -->
-    <div class="head-bar">
-      <!-- Name of the Organization -->
-      <div class="org-name">
-        <h2>Book Buddies</h2>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="home.html">Good Samaritan</a>
       </div>
-      <!-- Log in button at top right -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="list-view.html">List View</a></li>
+        <li><a href="map-view.html">Map View</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!--
+
+    <div class="head-bar">
+
       <button class="log-in">
-        Log In
+        Sign-In
       </button>
-      <!-- Back to list on the top left -->
+
       <a href="list-view.html">
       <button class="back-to-list">
         List View
@@ -30,7 +49,10 @@
       </button>
       </a>
     </div>
-
+-->
+    <div class="org-name">
+      <h1>Book Buddies</h1>
+    </div>
     <div class ="org-details">
       <div class="org-details-text">
         <h2>More Information:</h2>
@@ -56,7 +78,7 @@
      </button>
     </div>
 
-  </div>
+
 </body>
 
 </html>

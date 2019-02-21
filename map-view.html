@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Good Samaritan</title>
+  <link rel="stylesheet" href="map-style.css">
 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+</head>
+<body>
+
+    <nav class="navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" class="pull-left"><img src="Images/logo.jpg" width="138" height="40"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="list-view.html">List View</a></li>
+
+            <li><a href="#">Our Story</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+  <div class='sidebar'>
+    <div class='heading'>
+      <h1 class="sidebar-title">Volunteering Opportunities</h1>
+    </div>
+    <div id='listings' class='listings'></div>
+  </div>
+  <div id='map' class='map'> </div>
+  <script src="map-logic.js"></script>
+</body>
+</html>

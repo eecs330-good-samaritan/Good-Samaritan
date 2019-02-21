@@ -99,3 +99,8 @@ body {
 	margin-top: 2px;
 	margin-right: 10px;
 }
+
+.navbar-brand img {
+  position: relative;
+  top: -10px;
+}

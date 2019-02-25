@@ -2,6 +2,7 @@ body
 {
   background-color: #d6f7ff;
 	background-repeat: no-repeat;
+  font-family: Avenir, sans-serif;
 }
 
 .logo-art
@@ -39,7 +40,6 @@ body
   height: 50px;
   font-size: 20px;
   text-align: center;
-  font-family: Futura;
   border-radius: 25px;
 }
 
@@ -51,7 +51,6 @@ body
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-family: Futura;
   border-radius: 25px;
   padding-top: 2.5px;
   padding-botton: 2.5px;

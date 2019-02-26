@@ -2,6 +2,7 @@
     <head>
         <title>Good Samaritan Home Page</title>
         <link rel="stylesheet" type="text/css" href="g-s.css"/>
+        <script src="toggle.js"></script>
     </head>
 
     <body>
@@ -9,9 +10,12 @@
 
     <div class = "search">
         <input type="text" name="fname" placeholder="Type in Current Location to find Volunteer Opportunies Nearby  (e.g. Evanston)" class="search-bar">
-        <a href="map-view.html">
+        <a id = "go_button" href="map-view.html">
           <input type="submit" value="Go" class = "search-button">
         </a>
+        <label class="switch">
+          <input type="checkbox" id="togBtn" onclick="toggle()"><div class="slider round"></div>
+        </label>
     </div>
 
     <div class = "search">
@@ -31,8 +35,6 @@
           <input type="submit" value="Register an Organization" class = "register-buttons">
         </a>
     </div>
-
-
 
    </body>
 </html>

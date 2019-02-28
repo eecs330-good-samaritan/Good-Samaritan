@@ -85,6 +85,14 @@ input[type=submit]:hover {
   margin: auto;
   margin-top: 20px;
 }
+.orgaccount-form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 320px;
+  margin: auto;
+  margin-top: 20px;
+}
 
 .account-top-div{
 	height: 320px;
@@ -104,6 +112,21 @@ input[type=submit]:hover {
 	padding-left: 20px;
 	float:left;
 	background-color: #e6ccff;
+}
+.org-details{
+  margin-top: 160px;
+  margin-left: 55px;
+  display:inline-block;
+}
+.confirm-popup{
+  width: 1250px;
+  border: 2px solid;
+  text-align: center;
+ /* float: left;*/
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 #account-fname{

@@ -30,7 +30,7 @@
   </div>
 
   <div class="account-form">
-  <form action="/action_page.php">
+
 
     <label for="email">Email</label>
     <input type="email" id="emailad" name="emailaddress" placeholder="abc@example.com">
@@ -38,12 +38,26 @@
     <label for="pw">Password</label>
     <input type="password" id="pw" name="password" placeholder="">
 
+    <button class="btn2" onclick="login()">Login</button>
 
-    <input type="submit" value="Sign-In">
-  </form>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyABFHE-1VTyKt9lEGQOTmrxgBrziZh32RE",
+      authDomain: "good-samaritan19.firebaseapp.com",
+      databaseURL: "https://good-samaritan19.firebaseio.com",
+      projectId: "good-samaritan19",
+      storageBucket: "good-samaritan19.appspot.com",
+      messagingSenderId: "404684726142"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="backend.js"></script>
 
 </body>
 
 </html>
+

@@ -73,6 +73,17 @@ input[type=button] {
   cursor: pointer;
 }
 
+.btn3 {
+  width: 20%;
+  background-color: #f13b3b;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
@@ -103,10 +114,11 @@ input[type=submit]:hover {
 	width: 300px;
 	padding-left: 20px;
 	float:left;
-	background-color: #e6ccff;
+  background-color: #e6ccff;
+  font-size: large;
 }
 
-#account-fname{
+/*#account-fname{
 	text-align: left;
 	font-size: large;
 }
@@ -119,7 +131,7 @@ input[type=submit]:hover {
 #account-email{
 	text-align: left;
 	font-size: large;
-}
+}*/
 
 .account-info{
 	height: 300px;

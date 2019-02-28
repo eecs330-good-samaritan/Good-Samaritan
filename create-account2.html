@@ -21,7 +21,7 @@
         <li><a href="index.html">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
       </ul>
     </div>
   </nav>
@@ -31,7 +31,7 @@
   </div>
 
   <div class="account-form">
-  <form action="/action_page.php">
+  <!--<form action="/action_page.php">-->
     <label for="location">Location</label>
     <input type="text" id="location" name="homelocation" placeholder="Your location...">
 
@@ -44,10 +44,24 @@
     <input type="checkbox" id="prefs" name="p6" value="Poverty, Housing, Food Security"> Poverty, Housing, Food Security <br>
     <input type="checkbox" id="prefs" name="p7" value="Philanthropy"> Philanthropy <br>
 
-    <input type="submit" value="Submit">
-  </form>
+    <button class="btn2" onclick="userInfo()">Submit</button>
+  <!--</form>-->
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyABFHE-1VTyKt9lEGQOTmrxgBrziZh32RE",
+      authDomain: "good-samaritan19.firebaseapp.com",
+      databaseURL: "https://good-samaritan19.firebaseio.com",
+      projectId: "good-samaritan19",
+      storageBucket: "good-samaritan19.appspot.com",
+      messagingSenderId: "404684726142"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="backend.js"></script>
 
 </body>
 

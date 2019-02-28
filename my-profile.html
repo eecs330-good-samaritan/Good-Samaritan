@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body onload="getProfile()">
 
   <nav class="navbar navbar-inverse" style="background-color: #d6f7ff; border-color: #d6f7ff;">
     <div class="container-fluid">
@@ -31,37 +31,55 @@
   </div>
 
 <div class="account-top-div">
-  <img src="images/prof-pic.png" alt="Profile Pic" id="account-profile-image"/>
+  <img src="Images/prof-pic.png" alt="Profile Pic" id="account-profile-image"/>
 
   <div class="account-personal-info">
     <h3>First Name</h3>
     <div id="account-first-name">
-      <p>fname</p>
+      <p id="fname">First</p>
     </div>
     <h3>Last Name</h3>
     <div id="account-last-name">
-      <p>lname</p>
+      <p id="lname">Last</p>
     </div>
     <h3>Email</h3>
     <div id="account-email">
-      <p>abc@example.com</p>
+      <p id="emailad">Email</p>
     </div>
   </div>
 
   <div class="account-info">
     <h3>Location</h3>
     <div id="account-location">
-      <p>Evanston, IL</p>
+      <p id="loc">Evanston, IL</p>
     </div>
     <h3>Preferences</h3>
     <div id="account-prefs">
-      <p>Elderly and Disabled, Food Services</p>
+      <p id="prefs">Preferences</p>
     </div>
     <h3>Hours Worked</h3>
     <div id="account-hours">
-      <p>35</p>
+      <p id="hours">000</p>
     </div>
   </div>
 
-
 </div>
+<button class="btn3" onclick="logout()">Log Out</button>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyABFHE-1VTyKt9lEGQOTmrxgBrziZh32RE",
+      authDomain: "good-samaritan19.firebaseapp.com",
+      databaseURL: "https://good-samaritan19.firebaseio.com",
+      projectId: "good-samaritan19",
+      storageBucket: "good-samaritan19.appspot.com",
+      messagingSenderId: "404684726142"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="backend.js"></script>
+</body>
+</html>

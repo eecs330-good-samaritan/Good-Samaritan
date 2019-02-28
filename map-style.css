@@ -21,6 +21,15 @@ body {
   }
   a:hover { color:#101010; }
 
+  .navbar-nav a{
+    color: black !important;
+  }
+
+  li.active a{
+  color: white !important;
+  background-color: black;
+  }
+
   .sidebar {
     position:relative;
     width:25%;

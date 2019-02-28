@@ -57,21 +57,34 @@ body {
 }
 
 .org-details{
-  margin-top: 30px;
-
+  margin-bottom: 30px;
 	display:inline-block;
 }
 
+.navbar-brand img {
+  position: relative;
+  top: -10px;
+}
+
+.navbar-nav a{
+  color: black !important;
+}
+
+li.active a{
+color: white !important;
+}
 
 .org-details-text{
-  width: 400px;
-  height: 250px;
-  border: 6px solid;
+  width: 370px;
+  height: flex;
+  border: 2px solid;
   text-align: left;
  /* float: left;*/
 	margin-left: 10px;
   margin-right:30px;
   padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -89,18 +102,25 @@ body {
 
 }
 
+.dropmenu{
+	width: 1000px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
 .dropbtn {
-  background-color:  #e0e0d1;
+  background-color: #e6ccff;
   color: black;
   padding: 20px;
-  margin-top: 50px;
   font-size: 16px;
-  border: none;
+	border-width: 2px;
+	border-color: black;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+	border-width: 2px solid;
 }
 
 

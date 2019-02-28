@@ -12,10 +12,10 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse" style="background-color: #d6f7ff; border-color: #d6f7ff;">
+  <nav class="navbar navbar-inverse" style="background-color: #d6f7ff; border-color: #d6f7ff; font-color: black;">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">Good Samaritan</a>
+        <a class="navbar-brand" href="index.html" class="pull-left"><img src="Images/logo.jpg" width="138" height="40"></a>
       </div>
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
@@ -23,58 +23,62 @@
         <li><a href="map-view.html">Map View</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
       </ul>
     </div>
-  
+  </nav>
 
-  <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Category</button>
-  <div id="myDropdown" class="dropdown-content">
-  	<a href="#">All</a>
-    <a href="#">Health</a>
-    <a href="#">Environmental</a>
-    <a href="#">Community</a>
+  <div class="dropmenu">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Category ▼</button>
+        <div id="myDropdown" class="dropdown-content">
+  	        <a href="#">All</a>
+            <a href="#">Health</a>
+            <a href="#">Environmental</a>
+            <a href="#">Community</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Day ▼</button>
+        <div id="myDropdown" class="dropdown-content">
+  	       <a href="#">Any</a>
+           <a href="#">Monday</a>
+           <a href="#">Tuesday</a>
+           <a href="#">Wednesday</a>
+           <a href="#">Thursday</a>
+           <a href="#">Friday</a>
+       </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Times ▼</button>
+        <div class="dropdown-content">
+  	       <a href="#">Any</a>
+           <a href="#">Morning</a>
+           <a href="#">Afternoon</a>
+           <a href="#">Evening</a>
+        </div>
+      </div>
   </div>
-</div>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Day</button>
-  <div id="myDropdown" class="dropdown-content">
-  	<a href="#">Any</a>
-    <a href="#">Monday</a>
-    <a href="#">Tuesday</a>
-    <a href="#">Wednesday</a>
-    <a href="#">Thursday</a>
-    <a href="#">Friday</a>
-  </div>
-</div>
-<div class="dropdown">
-  <button class="dropbtn">Times</button>
-  <div class="dropdown-content">
-  	<a href="#">Any</a>
-    <a href="#">Morning</a>
-    <a href="#">Afternoon</a>
-    <a href="#">Evening</a>
-  </div>
-</div>
-</nav>
+
     <div class ="org-details">
       <div class="org-details-text">
         <h2>Book Buddies:</h2>
         <p>Location: 633 Clark St, Evanston, IL
         	<br>Date: Every Friday</br>
-			Time: Afternoon 
+			Time: Afternoon
+      <p> Description: Tecah young kids how to read</p>
         </p><a href="book-buddies.html">Learn More</a>
       </div>
+    </div>
+  </div>
 
-</div>
 <div class ="org-details">
       <div class="org-details-text">
         <h2>Campus Kitchen:</h2>
         <p>Location: 1820 Chicago Ave, Evanston, IL
         	<br>Date: Monday - Friday</br>
 			Time: Afternoon, Evening
+      <p> Description: Meal Packaging for Evanston residents</p>
         </p><a href="campus-kitchens.html">Learn More</a>
       </div>
   </div>
@@ -83,7 +87,8 @@
         <h2>Cornerstone Outreach:</h2>
         <p>Location: 4628 N. Clifton Ave. Chicago, IL
         	<br>Date: Monday - Friday</br>
-			Time: Morrning, Afternoon, and Evening 
+			Time: Morrning, Afternoon, and Evening
+        <p> Description: Food Pantry Volunteer Work</p>
         </p><a href="cco.html">Learn More</a>
       </div>
   </div>
@@ -93,7 +98,9 @@
         <h2>North Shore Village:</h2>
         <p>Location: 1603 Orrington Ave #1800, Evanston, IL
         	<br>Date: Monday - Friday</br>
-			Time: Morrning, Afternoon, and Evening 
+			       Time: Morrning, Afternoon, and Evening
+        <p> Description: Volunteer Work at an Eldery Home</p>
+
         </p><a href="north-shore-village.html">Learn More</a>
       </div>
   </div>
@@ -101,4 +108,3 @@
 </body>
 
 </html>
-

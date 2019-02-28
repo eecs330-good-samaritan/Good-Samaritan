@@ -118,3 +118,11 @@ body {
   position: relative;
   top: -10px;
 }
+
+.navbar-nav a{
+  color: black !important;
+}
+
+li.active a{
+color: white !important;
+}

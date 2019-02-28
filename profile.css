@@ -77,3 +77,63 @@ input[type=submit]:hover {
   margin: auto;
   margin-top: 20px;
 }
+
+.account-top-div{
+	height: 320px;
+	margin-top: 20px;
+}
+
+#account-profile-image{
+	height: 300px;
+	width: 300px;
+	margin-left: 20px;
+	float:left;
+}
+
+.account-personal-info{
+	height: 300px;
+	width: 300px;
+	padding-left: 20px;
+	float:left;
+	background-color: #e6ccff;
+}
+
+#account-fname{
+	text-align: left;
+	font-size: large;
+}
+
+#account-lname{
+	text-align: left;
+	font-size: large;
+}
+
+#account-email{
+	text-align: left;
+	font-size: large;
+}
+
+.account-info{
+	height: 300px;
+	width: 400px;
+	padding-left: 20px;
+	padding-top: 10px;
+	margin-right: 20px;
+	float: right;
+	background-color: #e6ccff;
+}
+
+#account-location{
+	text-align: left;
+	font-size: large;
+}
+
+#account-prefs{
+	text-align: left;
+	font-size: large;
+}
+
+#account-hours{
+	text-align: left;
+	font-size: large;
+}

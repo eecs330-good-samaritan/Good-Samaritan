@@ -69,7 +69,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             first: firstName,
             last: lastName,
             location: "",
-            preferences: "",
+            preferences: "None",
             hours: 0
 
             }).then(function(){
@@ -98,7 +98,13 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 function userInfo(){
     var loc = document.getElementById("location").value;
-    var prefs = document.getElementById("prefs").value;
+    //var prefs = document.getElementById("prefs").value;
+  var prefs = new Array();
+  for(var i = 1; i < 8; i++){
+    if (document.getElementById("prefs" + String(i)).checked == true){
+      prefs.push(document.getElementById("prefs" + String(i)).value)
+    }
+  }
 
     var user = firebase.auth().currentUser;
     var firestore = firebase.firestore();

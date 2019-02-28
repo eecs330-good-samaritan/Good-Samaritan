@@ -62,7 +62,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=button] {
+.btn2 {
   width: 100%;
   background-color: #e6ccff;
   color: black;

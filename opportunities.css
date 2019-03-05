@@ -117,6 +117,7 @@ body {
 .date-block{
 	display: block;
 	text-align: center;
+	margin-top: 40px;
 }
 
 input[type=date], select {

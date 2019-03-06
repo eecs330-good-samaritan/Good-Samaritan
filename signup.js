@@ -1,11 +1,15 @@
-function signup()
+
+var slot9 = "white";
+
+document.getElementById("t9").onclick = function()
 {
-  if (document.getElementById("t9").style.backgroundColor = "white")
+  if (slot9 == "white")
   {
-  document.getElementById("t9").style.backgroundColor = "green";
+    slot9 = "green";
   }
-  else if (document.getElementById("t9").style.backgroundColor = "green")
+  else if (slot9 == "green")
   {
-  document.getElementById("t9").style.backgroundColor = "white";
+    slot9 = "white";
   }
+  document.getElementById("t9").style.background = slot9;
 }

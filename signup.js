@@ -1,15 +1,13 @@
-
-var slot9 = "white";
-
-document.getElementById("t9").onclick = function()
+function shiftToggle(id)
 {
-  if (slot9 == "white")
+  var bg = document.getElementById(id).style.backgroundColor;
+  if (bg == "white")
   {
-    slot9 = "green";
+    bg = "green";
   }
-  else if (slot9 == "green")
+  else if (bg == "green")
   {
-    slot9 = "white";
+    bg = "white";
   }
-  document.getElementById("t9").style.background = slot9;
+  document.getElementById(id).style.background = bg;
 }

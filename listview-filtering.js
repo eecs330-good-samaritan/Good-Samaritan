@@ -1,17 +1,31 @@
 
-
+var clicked=true;
 //function used for filtering
 
 function filterlists(currentid){
 	var current_id = currentid;
+	//possibly chanege the name of the id to have clicked in it and then if there is clicked in the id return the normal listing
 	var elements = document.getElementsByClassName('org-details');
-	for (var i = 0; i < elements.length; i++) {
-    	var item = elements[i].id;
-   		if (item.includes(current_id)){
-   			elements[i].style.display = "span";
-   		}
-   		else {
-   			elements[i].style.display = "none";
-  		}    
+	if(clicked==false){
+    var elementss = document.getElementsByClassName('org-details');
+    for (var i = 0; i < elementss.length; i++) {
+		console.log(elements.length)
+		elementss[i].style.visibility = "visible";
+    clicked=true
 	}
+}
+	else if (clicked==true){
+		for (var i = 0; i < elements.length; i++) {
+    		var item = elements[i].id;
+   			if (item.includes(current_id)){
+   				elements[i].style.display = "span";
+   			}
+   			else {
+   				elements[i].style.display = "none";
+  			}    
+		}
+		clicked=false
+
+	}
+
 }

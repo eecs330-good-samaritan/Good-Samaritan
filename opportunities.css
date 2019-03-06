@@ -162,6 +162,21 @@ input[type=date], select {
 	height: 40px;
 	float: left;
 	border-style: outset;
+	background-color: red;
+}
+
+.schedule-selector-free{
+	width: 50%;
+	height: 40px;
+	float: left;
+	border-style: outset;
+}
+
+.schedule-selector-free:hover
+{
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
 }
 
 .navbar-brand img {

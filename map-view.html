@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="map-style.css">
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
-  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+  <!--<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />-->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,13 +40,49 @@
         </div>
       </nav>
 
+
   <div class='sidebar'>
     <div class='heading'>
       <h1 class="sidebar-title">Volunteering Opportunities</h1>
     </div>
     <div id='listings' class='listings'></div>
   </div>
-  <div id='map' class='map'> </div>
+  <div id='map' class='map'> 
+
+
+    <div class="dropmenu">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Category ▼</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="#">All</a>
+              <a href="#">Health</a>
+              <a href="#">Environmental</a>
+              <a href="#">Community</a>
+          </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Day ▼</button>
+          <div id="myDropdown" class="dropdown-content">
+             <a href="#">Any</a>
+             <a href="#">Monday</a>
+             <a href="#">Tuesday</a>
+             <a href="#">Wednesday</a>
+             <a href="#">Thursday</a>
+             <a href="#">Friday</a>
+         </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Times ▼</button>
+          <div class="dropdown-content">
+             <a href="#">Any</a>
+             <a href="#">Morning</a>
+             <a href="#">Afternoon</a>
+             <a href="#">Evening</a>
+          </div>
+        </div>
+    </div>
+
+  </div>
   <script src="map-logic.js"></script>
 </body>
 </html>

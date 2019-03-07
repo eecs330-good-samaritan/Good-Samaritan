@@ -32,9 +32,20 @@ firebase.auth().onAuthStateChanged(function(user) {
   function createAccount(){
     var userEmail = document.getElementById("emailad").value;
     var userPass = document.getElementById("pw").value;
+    var confirmPass = document.getElementById("cpw").value;
     var firstName = document.getElementById("fname").value;
     var lastName = document.getElementById("lname").value;
     
+    if(userPass.length < 6){
+      alert("Passwords must be greater than 6 characters. Please try again.")
+      return;
+    }
+    if(userPass != confirmPass){
+      alert("Passwords do not match. Please try again.")
+      return;
+    }
+
+
     firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
     .catch(function(error) {
           // Handle Errors here.
@@ -84,11 +95,6 @@ firebase.auth().onAuthStateChanged(function(user) {
               // No user is signed in.
               console.log("Not logged in");
             }
-          
-
-
-
-      
       });
     });
     console.log("Logging in...")

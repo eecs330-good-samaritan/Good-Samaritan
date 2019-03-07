@@ -133,8 +133,14 @@ color: white !important;
   z-index: 1;
 }
 
-
 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p {
   color: black;
   padding: 12px 16px;
   text-decoration: none;

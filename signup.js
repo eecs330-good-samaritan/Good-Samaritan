@@ -1,17 +1,23 @@
+var clicked = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+var x;
+
 function shiftToggle(id)
 {
-  var bg = document.getElementById(id).style.background;
-  console.log(bg)
-  if (bg == "white")
+
+  x = id;
+
+  if (!clicked[x])
   {
-    bg = "green";
+    document.getElementById(id).style.backgroundColor  = "green";
+    clicked[x] = true;
   }
-  else if (bg == "green")
+  else
   {
-    bg = "white";
+    document.getElementById(id).style.backgroundColor  = "white";
+    clicked[x] = false;
   }
-  document.getElementById(id).style.background = bg;
 }
+
 
 // When the user clicks on <div>, open the popup
 function myFunction() {

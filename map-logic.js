@@ -1,3 +1,5 @@
+//mapboxgl.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1NWtqaTd1cCJ9.bxn3UAJ-A_ihN6LZRdE0Lg';
+
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1NWtqaTd1cCJ9.bxn3UAJ-A_ihN6LZRdE0Lg';
   var geojson = [
       {
@@ -103,10 +105,19 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
         ]
       }
   ];
-  var map = L.mapbox.map('map', 'mapbox.k8xv42t9')
-  .setView([42.0547956,-87.6779948], 15);
+  var map = L.mapbox.map('map')
+  .setView([42.0547956,-87.6779948], 15)
+  .addLayer(L.mapbox.styleLayer('mapbox://styles/afarkash/cjswpmxko0o8s1fp1gvw4or00'));
 
-  map.scrollWheelZoom.disable();
+
+  /*const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/afarkash/cjswpmxko0o8s1fp1gvw4or00',
+    center: [2.317600, 48.866500],
+    zoom: 12.0
+    });*/
+
+  map.scrollWheelZoom.enable();
 
   var listings = document.getElementById('listings');
   var locations = L.mapbox.featureLayer().addTo(map);
@@ -177,5 +188,4 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
       iconAnchor: [28, 28],
       popupAnchor: [0, -34]
     }));
-
 });

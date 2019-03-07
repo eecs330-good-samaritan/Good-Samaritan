@@ -104,10 +104,31 @@ body {
 	border-color: black;
 	border-radius: 25px;
 	padding-top: 2.5px;
-  padding-botton: 2.5px;
+  padding-bottom: 2.5px;
 }
 
 .sign-up-button:hover
+{
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+
+.clear-button{
+  width: 360px;
+  height: 50px;
+  background-color: #fc9d19;
+  text-align: center;
+  font-size: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-color: black;
+	border-radius: 25px;
+	padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+
+.clear-button:hover
 {
   background-color: #2196F3;
   color: white;
@@ -162,8 +183,25 @@ input[type=date], select {
 	height: 40px;
 	float: left;
 	border-style: outset;
+	background-color: red;
 }
 
+.schedule-selector-free{
+	width: 50%;
+	height: 40px;
+	float: left;
+	border-style: outset;
+	background-color: white;
+}
+
+/*
+.schedule-selector-free:hover
+{
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+*/
 .navbar-brand img {
   position: relative;
   top: -10px;
@@ -175,4 +213,63 @@ input[type=date], select {
 
 li.active a{
 color: white !important;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+	font-size: x-large;
+	background-color: #fc9d19;
+	padding: 14px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	width:70%;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

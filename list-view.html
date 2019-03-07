@@ -30,37 +30,39 @@
 
   <div class="dropmenu">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Category ▼</button>
+      <button " class="dropbtn">Category ▼</button>
         <div id="myDropdown" class="dropdown-content">
-  	        <a href="#">All</a>
-            <a href="#">Health</a>
-            <a href="#">Environmental</a>
-            <a href="#">Community</a>
+  	        <a href="list-view.html">All</a>
+            <a href="#"><input type="checkbox" id="H" onclick="filterlists(this.id)"/>Health</a>
+            <a href="#"><input type="checkbox" id="E" onclick="filterlists(this.id)"/>Environmental</a>
+            <a href="#"><input type="checkbox" id="C" onclick="filterlists(this.id)"/>Community</a>
         </div>
     </div>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Day ▼</button>
+      <button " class="dropbtn">Day ▼</button>
         <div id="myDropdown" class="dropdown-content">
-  	       <a href="#">Any</a>
-           <a href="#">Monday</a>
-           <a href="#">Tuesday</a>
-           <a href="#">Wednesday</a>
-           <a href="#">Thursday</a>
-           <a href="#">Friday</a>
+  	       <a href="list-view.html">Any</a>
+           <a href="#"><input type="checkbox" id="Mn" onclick="filterlists(this.id)"/>Monday</a>
+           <a href="#"><input type="checkbox" id="Tu" onclick="filterlists(this.id)"/>Tuesday</a>
+           <a href="#"><input type="checkbox" id="W" onclick="filterlists(this.id)"/>Wednesday</a>
+           <a href="#"><input type="checkbox" id="Th" onclick="filterlists(this.id)"/>Thursday</a>
+           <a href="#"><input type="checkbox" id="F" onclick="filterlists(this.id)"/>Friday</a>
        </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Times ▼</button>
         <div class="dropdown-content">
-  	       <a href="#">Any</a>
-           <a href="#">Morning</a>
-           <a href="#">Afternoon</a>
-           <a href="#">Evening</a>
+  	       <a href="list-view.html">Any</a>
+           <a href="#"><input type="checkbox" id="Mo" onclick="filterlists(this.id)"/>Morning</a>
+           <a href="#"><input type="checkbox" id="Af" onclick="filterlists(this.id)"/>Afternoon</a>
+           <a href="#"><input type="checkbox" id= "Ev" onclick="filterlists(this.id)"/>Evening</a>
         </div>
       </div>
   </div>
 
-    <div class ="org-details">
+
+  <!-- ID keys are categories (H,E,C), day (M, Tu, w, Th, F), times (Mo, Af, Ev) -->
+    <div id= "1CFAf" class ="org-details">
       <div class="org-details-text">
         <h2>Book Buddies:</h2>
         <p>Location: 633 Clark St, Evanston, IL
@@ -72,7 +74,7 @@
     </div>
   </div>
 
-<div class ="org-details">
+<div id="2CMnTuWThFAfEv" class ="org-details">
       <div class="org-details-text">
         <h2>Campus Kitchen:</h2>
         <p>Location: 1820 Chicago Ave, Evanston, IL
@@ -82,7 +84,7 @@
         </p><a href="campus-kitchens.html">Learn More</a>
       </div>
   </div>
-  <div class ="org-details">
+  <div id="3CMnTuWThFMoAfEv" class ="org-details">
       <div class="org-details-text">
         <h2>Cornerstone Outreach:</h2>
         <p>Location: 4628 N. Clifton Ave. Chicago, IL
@@ -93,7 +95,7 @@
       </div>
   </div>
 
-  <div class ="org-details">
+  <div id="4EMnTuWThFMoAfEv" class ="org-details">
       <div class="org-details-text">
         <h2>North Shore Village:</h2>
         <p>Location: 1603 Orrington Ave #1800, Evanston, IL
@@ -105,7 +107,7 @@
       </div>
   </div>
 
-  <div class ="org-details">
+  <div id="5HTuEv" class ="org-details">
       <div class="org-details-text">
         <h2>TPAN:</h2>
         <p>Location: 5050 N Broadway #300, Chicago, IL
@@ -116,7 +118,7 @@
         </p><a href="north-shore-village.html">Learn More</a>
       </div>
   </div>
-<!-- <script src="listjs.js"></script> -->
+  <script src = "listview-filtering.js"></script>
 </body>
 
 </html>

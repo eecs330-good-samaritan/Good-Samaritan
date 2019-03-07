@@ -40,6 +40,38 @@
         </div>
       </nav>
 
+      <div class="dropmenu">
+        <div class="dropdown">
+          <button " class="dropbtn">Category ▼</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="map-view.html">All</a>
+                <p><input type="checkbox" id="H" onclick="filterlists(this.id)"/>Health</p>
+                <p><input type="checkbox" id="E" onclick="filterlists(this.id)"/>Environmental</p>
+                <p><input type="checkbox" id="C" onclick="filterlists(this.id)"/>Community</p>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button " class="dropbtn">Day ▼</button>
+            <div id="myDropdown" class="dropdown-content">
+               <a href="map-view.html">Any</a>
+               <p><input type="checkbox" id="Mn" onclick="filterlists(this.id)"/>Monday</p>
+               <p><input type="checkbox" id="Tu" onclick="filterlists(this.id)"/>Tuesday</p>
+               <p><input type="checkbox" id="W" onclick="filterlists(this.id)"/>Wednesday</p>
+               <p><input type="checkbox" id="Th" onclick="filterlists(this.id)"/>Thursday</p>
+               <p><input type="checkbox" id="F" onclick="filterlists(this.id)"/>Friday</p>
+           </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Times ▼</button>
+            <div class="dropdown-content">
+               <a href="map-view.html">Any</a>
+               <p><input type="checkbox" id="Mo" onclick="filterlists(this.id)"/>Morning</p>
+               <p><input type="checkbox" id="Af" onclick="filterlists(this.id)"/>Afternoon</p>
+               <p><input type="checkbox" id= "Ev" onclick="filterlists(this.id)"/>Evening</p>
+            </div>
+          </div>
+      </div>
+
 
   <div class='sidebar'>
     <div class='heading'>
@@ -50,37 +82,7 @@
   <div id='map' class='map'> 
 
 
-    <div class="dropmenu">
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Category ▼</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="#">All</a>
-              <a href="#">Health</a>
-              <a href="#">Environmental</a>
-              <a href="#">Community</a>
-          </div>
-      </div>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Day ▼</button>
-          <div id="myDropdown" class="dropdown-content">
-             <a href="#">Any</a>
-             <a href="#">Monday</a>
-             <a href="#">Tuesday</a>
-             <a href="#">Wednesday</a>
-             <a href="#">Thursday</a>
-             <a href="#">Friday</a>
-         </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Times ▼</button>
-          <div class="dropdown-content">
-             <a href="#">Any</a>
-             <a href="#">Morning</a>
-             <a href="#">Afternoon</a>
-             <a href="#">Evening</a>
-          </div>
-        </div>
-    </div>
+
 
   </div>
   <script src="map-logic.js"></script>

@@ -52,6 +52,8 @@ firebase.auth().onAuthStateChanged(function(user) {
           var errorCode = error.code;
           var errorMessage = error.message;
             console.log(errorMessage);
+            alert(errorMessage);
+            return;
           // ... look at all the possible Error codes in the doc to handle the different cases
     
     }).then(function(){

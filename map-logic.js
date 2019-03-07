@@ -1,5 +1,3 @@
-//mapboxgl.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1NWtqaTd1cCJ9.bxn3UAJ-A_ihN6LZRdE0Lg';
-
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1NWtqaTd1cCJ9.bxn3UAJ-A_ihN6LZRdE0Lg';
   var geojson = [
       {
@@ -21,7 +19,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
               "country": "United States",
               "postalCode": "60201",
               "state": "Illinois",
-              "signup": "campus-kitchens.html"
+              "signup": "campus-kitchens.html",
+              "id": "2CMnTuWThFAfEv"
             }
           },
           {
@@ -40,7 +39,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
               "country": "United States",
               "postalCode": "60201",
               "state": "Illinois",
-              "signup": "book-buddies.html"
+              "signup": "book-buddies.html",
+              "id": "1CFAf"
             }
           },
           {
@@ -59,7 +59,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
               "country": "United States",
               "postalCode": "60201",
               "state": "Illinois",
-              "signup": "north-shore-village.html"
+              "signup": "north-shore-village.html",
+              "id": "4EMnTuWThFMoAfEv"
             }
           },
           {
@@ -79,7 +80,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
               "country": "United States",
               "postalCode": "60201",
               "state": "Illinois",
-              "signup": "tpan.html"
+              "signup": "tpan.html",
+              "id": "5HTuEv"
             }
           },
           {
@@ -98,7 +100,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
               "country": "United States",
               "postalCode": "60201",
               "state": "Illinois",
-              "signup": "cco.html"
+              "signup": "cco.html",
+              "id": "3CMnTuWThFMoAfEv"
             }
           }
           
@@ -109,13 +112,6 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
   .setView([42.0547956,-87.6779948], 15)
   .addLayer(L.mapbox.styleLayer('mapbox://styles/afarkash/cjswpmxko0o8s1fp1gvw4or00'));
 
-
-  /*const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/afarkash/cjswpmxko0o8s1fp1gvw4or00',
-    center: [2.317600, 48.866500],
-    zoom: 12.0
-    });*/
 
   map.scrollWheelZoom.enable();
 
@@ -145,6 +141,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
 
     var listing = listings.appendChild(document.createElement('div'));
     listing.className = 'item';
+    listing.id = prop.id;
 
     var link = listing.appendChild(document.createElement('a'));
     link.href = '#';
@@ -189,3 +186,34 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWZhcmthc2giLCJhIjoiY2psdWNpY3dmMGk2cDNxcDk1N
       popupAnchor: [0, -34]
     }));
 });
+
+var clicked = true;
+function filterlists(currentid){
+
+	var current_id = currentid;
+	//possibly chanege the name of the id to have clicked in it and then if there is clicked in the id return the normal listing
+	var elements = document.getElementsByClassName('item');
+	if(clicked==false){
+   
+    for (var i = 0; i < elements.length; i++) {
+    var elementss = document.getElementById(elements[i].id);
+		console.log(elements[i].id)
+		elementss.style.display = "";
+    
+	}
+  clicked=true
+}
+	else if (clicked==true){
+		for (var i = 0; i < elements.length; i++) {
+    		var item = elements[i].id;
+   			if (item.includes(current_id)){
+   				elements[i].style.display = "span";
+   			}
+   			else {
+   				elements[i].style.display = "none";
+  			}    
+		}
+		clicked=false
+	}
+
+}

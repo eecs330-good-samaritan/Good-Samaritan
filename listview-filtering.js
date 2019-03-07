@@ -7,12 +7,14 @@ function filterlists(currentid){
 	//possibly chanege the name of the id to have clicked in it and then if there is clicked in the id return the normal listing
 	var elements = document.getElementsByClassName('org-details');
 	if(clicked==false){
-    var elementss = document.getElementsByClassName('org-details');
-    for (var i = 0; i < elementss.length; i++) {
-		console.log(elements.length)
-		elementss[i].style.visibility = "visible";
-    clicked=true
+   
+    for (var i = 0; i < elements.length; i++) {
+    var elementss = document.getElementById(elements[i].id);
+		console.log(elements[i].id)
+		elementss.style.display = "";
+    
 	}
+  clicked=true
 }
 	else if (clicked==true){
 		for (var i = 0; i < elements.length; i++) {

@@ -124,7 +124,7 @@ input[type=submit]:hover {
 	padding-left: 20px;
 	float:left;
   background-color: #e6ccff;
-  font-size: large;
+  font-size: small;
 }
 .org-details{
   margin-top: 160px;
@@ -165,6 +165,7 @@ input[type=submit]:hover {
 	padding-top: 10px;
 	float: right;
 	background-color: #e6ccff;
+	font-size: small;
 }
 
 #account-location{

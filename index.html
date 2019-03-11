@@ -2,16 +2,16 @@
     <head>
         <title>Good Samaritan Home Page</title>
         <link rel="stylesheet" type="text/css" href="g-s.css"/>
-        <script src="toggle.js"></script>
+
     </head>
 
     <body>
       <img src="Images/logo.jpg" alt="logo.jpg" class="logo-art">
 
     <div class = "search">
-        <input type="text" name="fname" placeholder="Type in Current Location to find Volunteer Opportunies Nearby  (e.g. Evanston)" class="search-bar">
+        <input type="text" name="fname" id="searchBar" placeholder="Type in Current Location to find Volunteer Opportunies Nearby  (e.g. Evanston)" class="search-bar">
         <a id = "go_button" href="map-view.html">
-          <input type="submit" value="Go" class = "search-button">
+          <input type="submit" id="go" value="Go" class = "search-button">
         </a>
         <label class="switch">
           <input type="checkbox" id="togBtn" onclick="toggle()"><div class="slider round"></div>
@@ -35,6 +35,6 @@
           <input type="submit" value="Register an Organization" class = "register-buttons">
         </a>
     </div>
-
+    <script src="toggle.js"></script>
    </body>
 </html>

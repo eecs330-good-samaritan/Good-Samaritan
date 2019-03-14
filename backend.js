@@ -225,17 +225,23 @@ function login(){
         }
     
       } else {
-        // No user is signed in.
-        console.log("Not logged in");
-        document.location.href = 'create-profile.html';
-      }
+          window.location.href = 'create-profile.html';
+        }
     });
  
-    }
+  }
 
+  function toIndex(){
+    var prom = new Promise(function(){
+      window.location.href = "index.html";
+    });
+    return prom;
+  }
 
 
   function logout(){
-    firebase.auth().signOut();
-    window.location.href = "index.html";
+    firebase.auth().signOut()
+    .then(function() {
+      toIndex()
+    });
   }

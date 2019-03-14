@@ -75,7 +75,7 @@ body {
   .listings .item:last-child { border-bottom:none; }
   .listings .item .title {
     display:block;
-    color:#00853e;
+    color:black;
     font-weight:700;
   }
   .listings .item .title small { font-weight:400; }
@@ -145,7 +145,7 @@ body {
     top: -10px;
   }
   .container-fluid{
-    background-color: #dce2f3
+    background-color:#d6f7ff
   }
 
   .dropmenu{

@@ -204,3 +204,7 @@ color: white !important;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color:  #d6f7ff;}
+
+.container-fluid{
+  background-color: #dce2f3
+}

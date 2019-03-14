@@ -142,3 +142,20 @@ input:checked + .slider:after
 {
   content:'List View';
 }
+
+.title{
+  text-align: center;
+}
+
+body a{
+  color: black;
+}
+
+.container-fluid{
+  background-color: #dce2f3
+}
+
+.navbar-brand img{
+  position: relative;
+  top: -10px;
+}

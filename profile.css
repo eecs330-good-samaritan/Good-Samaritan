@@ -142,12 +142,12 @@ input[type=submit]:hover {
   padding-bottom: 20px;
 }
 
-/*#account-fname{
+#account-first-name{
 	text-align: left;
 	font-size: large;
 }
 
-#account-lname{
+#account-last-name{
 	text-align: left;
 	font-size: large;
 }
@@ -155,7 +155,7 @@ input[type=submit]:hover {
 #account-email{
 	text-align: left;
 	font-size: large;
-}*/
+}
 
 .account-info{
 	height: 45%;

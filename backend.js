@@ -227,6 +227,7 @@ function login(){
       } else {
         // No user is signed in.
         console.log("Not logged in");
+        document.location.href = 'create-profile.html';
       }
     });
  

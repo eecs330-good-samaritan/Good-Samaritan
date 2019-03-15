@@ -106,47 +106,49 @@ input[type=submit]:hover {
 }
 
 .account-top-div{
-	height: 320px;
+	height: 640px;
+	width: 640px;
+	margin:auto;
 	margin-top: 20px;
 }
 
 #account-profile-image{
-	height: 300px;
-	width: 300px;
-	margin-left: 20px;
+	height: 50%;
+	width: 50%;
 	float:left;
 }
 
 .account-personal-info{
-	height: 300px;
-	width: 300px;
+	height: 50%;
+	width: 50%;
 	padding-left: 20px;
 	float:left;
   background-color: #e6ccff;
-  font-size: large;
+  font-size: small;
 }
 .org-details{
   margin-top: 160px;
-  margin-left: 55px;
+  margin-left: 125px;
   display:inline-block;
+  
 }
 .confirm-popup{
   width: 1250px;
   border: 2px solid;
   text-align: center;
  /* float: left;*/
-  
+
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-/*#account-fname{
+#account-first-name{
 	text-align: left;
 	font-size: large;
 }
 
-#account-lname{
+#account-last-name{
 	text-align: left;
 	font-size: large;
 }
@@ -154,16 +156,17 @@ input[type=submit]:hover {
 #account-email{
 	text-align: left;
 	font-size: large;
-}*/
+}
 
 .account-info{
-	height: 300px;
-	width: 400px;
+	height: 45%;
+	width: 100%;
+	margin-top: 20px;
 	padding-left: 20px;
 	padding-top: 10px;
-	margin-right: 20px;
 	float: right;
 	background-color: #e6ccff;
+	font-size: small;
 }
 
 #account-location{

@@ -30,7 +30,7 @@
   </nav>
 
 <div class="org-name">
-  <h1>Book Buddies Sign Up</h1>
+  <h1>Register Your Org's Times</h1>
 </div>
 
 <div class = "date-block">
@@ -40,34 +40,37 @@
 </form>
 </div>
 
-<div class="schedule-container">
 
+<div class="schedule-container">
+<div>
+  <p>Click on the slots for each available shift your org has:</p>
+</div>
 <div class="schedule-time-box"> 6:00 am - 7:00 am </div>
-<div id="0" class="schedule-selector"> </div>
+<div id="0" class="schedule-selector-free" onclick="shiftToggle('0')"> </div>
 
 <div class="schedule-time-box"> 7:00 am - 8:00 am </div>
-<div id="1" class="schedule-selector"> </div>
+<div id="1" class="schedule-selector-free" onclick="shiftToggle('1')"> </div>
 
 <div class="schedule-time-box"> 8:00 am - 9:00 am </div>
-<div id="2" class="schedule-selector"> </div>
+<div id="2" class="schedule-selector-free" onclick="shiftToggle('2')"> </div>
 
 <div class="schedule-time-box"> 9:00 am - 10:00 am </div>
-<div id="3" class="schedule-selector"> </div>
+<div id="3" class="schedule-selector-free" onclick="shiftToggle('3')"> </div>
 
 <div class="schedule-time-box"> 10:00 am - 11:00 am </div>
-<div id="4" class="schedule-selector"> </div>
+<div id="4" class="schedule-selector-free" onclick="shiftToggle('4')"> </div>
 
 <div class="schedule-time-box"> 11:00 am - 12:00 pm </div>
-<div id="5" class="schedule-selector"> </div>
+<div id="5" class="schedule-selector-free" onclick="shiftToggle('5')"> </div>
 
 <div class="schedule-time-box"> 12:00 pm - 1:00 pm </div>
-<div id="6" class="schedule-selector"> </div>
+<div id="6" class="schedule-selector-free" onclick="shiftToggle('6')" > </div>
 
 <div class="schedule-time-box"> 1:00 pm - 2:00 pm </div>
-<div id="7" class="schedule-selector"> </div>
+<div id="7" class="schedule-selector-free" onclick="shiftToggle('7')"> </div>
 
 <div class="schedule-time-box"> 2:00 pm - 3:00 pm </div>
-<div id="8" class="schedule-selector"> </div>
+<div id="8" class="schedule-selector-free" onclick="shiftToggle('8')"> </div>
 
 <div class="schedule-time-box"> 3:00 pm - 4:00 pm </div>
 <div id="9" class="schedule-selector-free" onclick="shiftToggle('9')"> </div>
@@ -76,19 +79,18 @@
 <div id="10" class="schedule-selector-free" onclick="shiftToggle('10')"></div>
 
 <div class="schedule-time-box"> 5:00 pm - 6:00 pm </div>
-<div id="11" class="schedule-selector"> </div>
+<div id="11" class="schedule-selector-free" onclick="shiftToggle('11')"> </div>
 
 <div class="schedule-time-box"> 6:00 pm - 7:00 pm </div>
-<div id="12" class="schedule-selector"> </div>
+<div id="12" class="schedule-selector-free" onclick="shiftToggle('12')"> </div>
 
 <div class="schedule-time-box"> 7:00 pm - 8:00 pm </div>
-<div id="13" class="schedule-selector" > </div>
+<div id="13" class="schedule-selector-free" onclick="shiftToggle('13')"> </div>
 
 <div class="schedule-time-box"> 8:00 pm - 9:00 pm </div>
-<div id="14" class="schedule-selector"> </div>
+<div id="14" class="schedule-selector-free" onclick="shiftToggle('14')"> </div>
 
-<div class="popup" onclick="myFunction()">Confirm Shifts
-  <span class="popuptext" id="myPopup">Hooray! Confirmation email sent!</span>
+<div class="popup" onclick=window.location.href="orgsignup-confirm.html">Submit Application
 </div>
 
 

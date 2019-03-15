@@ -128,8 +128,9 @@ input[type=submit]:hover {
 }
 .org-details{
   margin-top: 160px;
-  margin-left: 55px;
+  margin-left: 125px;
   display:inline-block;
+  
 }
 .confirm-popup{
   width: 1250px;

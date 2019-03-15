@@ -191,7 +191,7 @@ var clicked = true;
 function filterlists(currentid){
 
 	var current_id = currentid;
-	//possibly chanege the name of the id to have clicked in it and then if there is clicked in the id return the normal listing
+	//possibly change the name of the id to have clicked in it and then if there is clicked in the id return the normal listing
 	var elements = document.getElementsByClassName('item');
 	if(clicked==false){
    
